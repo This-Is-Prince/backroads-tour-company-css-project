@@ -1,0 +1,24 @@
+{
+  "name": "backroads-tour-company-css-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/This-Is-Prince/backroads-tour-company-css-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/This-Is-Prince/backroads-tour-company-css-project/issues"
+  },
+  "homepage": "https://github.com/This-Is-Prince/backroads-tour-company-css-project#readme",
+  "devDependencies": {
+    "vite": "^2.7.10"
+  }
+}
