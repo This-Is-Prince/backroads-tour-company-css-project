@@ -335,6 +335,80 @@ Featured Tours
 ===============
 */
 
+.tour-card {
+  margin-bottom: 2rem;
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  box-shadow: var(--light-shadow);
+}
+.tour-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--dark-shadow);
+}
+.tour-img-container {
+  position: relative;
+}
+.tour-img {
+  height: 15rem;
+  object-fit: cover;
+}
+.tour-date {
+  right: 0;
+  bottom: 0;
+  margin-bottom: 0;
+  position: absolute;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+}
+.tour-info {
+  padding: 1.25rem 1.5rem;
+}
+
+/* extra css */
+.tour-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tour-title p,
+.tour-title h4 {
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+/* end of extra css */
+
+.tour-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.tour-footer p {
+  line-height: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+.tour-btn {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .tour-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .tour-card {
+    flex: 0 0 calc(33.333% - 2rem);
+  }
+}
 /*
 =============== 
 Contact
