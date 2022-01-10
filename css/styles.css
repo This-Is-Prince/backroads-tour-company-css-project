@@ -409,11 +409,69 @@ Featured Tours
     flex: 0 0 calc(33.333% - 2rem);
   }
 }
+
 /*
 =============== 
 Contact
 ===============
 */
+.contact {
+  background: var(--clr-primary-5);
+}
+.contact-title {
+  color: var(--clr-white);
+}
+.contact-title p {
+  color: var(--clr-primary-8);
+}
+.contact-form {
+  display: flex;
+  max-width: 28rem;
+}
+.form-control {
+  flex: 1 1 auto;
+  color: var(--clr-grey-5);
+}
+.form-control,
+.btn-submit {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  border: transparent;
+  padding: 0.375rem 0.75rem;
+  text-transform: capitalize;
+  background: var(--clr-white);
+  letter-spacing: var(--spacing);
+}
+.form-control::placeholder {
+  color: inherit;
+}
+.btn-submit {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  color: var(--clr-primary-1);
+  transition: var(--transition);
+  font-family: var(--ff-primary);
+  background: var(--clr-primary-8);
+}
+.btn-submit:hover {
+  color: var(--clr-primary-5);
+  background: var(--clr-primary-1);
+}
+
+@media screen and (min-width: 992px) {
+  .contact-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    max-width: 100%;
+    padding-left: 2rem;
+  }
+}
 
 /*
 =============== 
