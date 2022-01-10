@@ -271,11 +271,63 @@ About
     position: relative;
   }
 }
+
 /*
 =============== 
 Services
 ===============
 */
+.services {
+  background: var(--clr-grey-10);
+}
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.service-icon {
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-5);
+}
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .service {
+    margin-bottom: 1rem;
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+    text-align: left;
+  }
+  .service-icon {
+    align-self: start;
+  }
+  .service-info {
+    padding-left: 1rem;
+  }
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+}
 
 /*
 =============== 
